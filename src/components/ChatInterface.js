@@ -1,10 +1,11 @@
 import React from 'react';
+import './ChatInterface.css';
 
 function ChatInterface({ messages }) {
   return (
-    <div className="p-4 max-w-lg mx-auto bg-white rounded-lg shadow">
+    <div className="chat-container">
       {messages.map((msg, index) => (
-        <div key={index} className={`p-2 ${msg.isBot ? 'text-right' : 'text-left'}`}>{msg.text}</div>
+        <div key={index} className={`message ${msg.isBot ? 'message-bot' : 'message-user'}`}>{msg.text}</div>
       ))}
     </div>
   );

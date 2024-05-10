@@ -1,0 +1,15 @@
+.chat-container {
+  @apply p-4 max-w-lg mx-auto bg-white rounded-lg shadow;
+}
+
+.message {
+  @apply p-2;
+}
+
+.message-bot {
+  @apply text-right;
+}
+
+.message-user {
+  @apply text-left;
+}
